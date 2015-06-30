@@ -1,0 +1,17 @@
+$(function() {
+
+   var $newItem = $('#new-item');
+   var $itemName = $('#item-name');
+
+
+  // $newItem.submit(function() {
+
+//    })
+
+   $newItem.on("submit", function(event) {
+       console.log("submitting form!");
+       event.preventDefault();
+       console.log($itemName.val());
+
+   }); 
+});
